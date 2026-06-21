@@ -1,0 +1,42 @@
+html {
+  font-family: $primary-font;
+}
+
+.flex {
+  display: flex;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+  
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.justify-end {
+    justify-content: end;
+  }
+
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+}
+
+// WIDTHS
+.w {
+  &-100 {
+    width: 100%;
+  }
+
+  &-50 {
+    width: 50%;
+  }
+}

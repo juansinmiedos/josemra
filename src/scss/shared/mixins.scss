@@ -1,0 +1,11 @@
+@mixin from($device) {
+  @media (min-width: $device + 1px) {
+    @content;
+  }
+}
+
+@mixin until($device) {
+  @media (max-width: $device) {
+    @content;
+  }
+}
