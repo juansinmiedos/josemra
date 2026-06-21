@@ -32,7 +32,11 @@ export default [
         name: "ProjectDetailView",
         component: loadComponent("ProjectDetailView")
       },
-      // 404 
+      {
+        path: '/:pathMatch(.*)*',
+        name: "NoRouteView",
+        redirect: "/home",
+      },
     ]
   }
 ]
