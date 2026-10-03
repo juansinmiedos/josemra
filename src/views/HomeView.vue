@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import GalaxySection from '@/components/GalaxySection.vue'
+import GalaxySection from '@/components/home/GalaxySection.vue'
 </script>
 
 <style lang="scss" scoped>
