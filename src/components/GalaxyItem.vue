@@ -1,36 +1,35 @@
-.galaxy-section {
-  padding: 32px 64px;
-  display: flex;
-  justify-content: flex-end;
-}
+<template>
+  <img :src="src" :alt="id" class="galaxy-item" :class="id">
+</template>
 
-.container {
-  width: 80%;
-  // background-color: #191919;
-  display: grid;
-  grid-template: repeat(32, 1fr) / repeat(30, 1fr);
+<script setup>
+defineProps({
+  src: String,
+  id: String,
+})
+</script>
 
-  @media (orientation: landscape) {
-    height: 60vh;
-    // padding: 40px 20px;
-    gap: 6px;
-  }
-
-  @media (orientation: portrait) {
-    height: 40vh;
-    // padding: 16px 8px;
-    gap: 4px;
-  }
-}
-
-.item {
-	object-fit: cover;
-	width: 100%;
-	height:100%;
+<style lang="scss" scoped>
+.galaxy-item {
+  object-fit: cover;
+  width: 100%;
+  height:100%;
   border-radius: 4px;
+
+  transition:
+    transform 0.35s ease,
+    z-index 0s linear 0.35s;
+
+  position: relative;
+
+  &:hover {
+    transform: scale(1.35);
+    z-index: 10;
+    cursor: pointer;
+  }
 }
 
-//items position
+//items position (IDs)
 .item1 {
 	grid-area: 8/1/15/6;
 }
@@ -85,3 +84,4 @@
 .item18 {
 	grid-area: 25/26/33/31;
 }
+</style>

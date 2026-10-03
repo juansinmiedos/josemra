@@ -1,3 +1,6 @@
 <template>
- <RouterView />
+  <!-- Add Navbar -->
+  <RouterView />
+
+  <!-- Add footer with lang control -->
 </template>
