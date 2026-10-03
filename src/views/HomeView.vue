@@ -14,8 +14,9 @@ import GalaxySection from '@/components/home/GalaxySection.vue'
 
 <style lang="scss" scoped>
 .home {
-  height: 100vh;
+  height: calc(100vh - 40px);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 </style>
