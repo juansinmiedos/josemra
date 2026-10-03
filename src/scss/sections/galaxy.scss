@@ -1,19 +1,26 @@
+.galaxy-section {
+  padding: 32px 64px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .container {
-	 background-color: #191919;
-		display: grid;
-		grid-template: repeat(25, 1fr) / repeat(21, 1fr);
+  width: 80%;
+  // background-color: #191919;
+  display: grid;
+  grid-template: repeat(32, 1fr) / repeat(30, 1fr);
 
-		@media (orientation: landscape) {
-			height: 60vh;
-			padding: 40px 20px;
-			gap: 6px;
-		}
+  @media (orientation: landscape) {
+    height: 60vh;
+    // padding: 40px 20px;
+    gap: 6px;
+  }
 
-		@media (orientation: portrait) {
-			height: 40vh;
-			padding: 16px 8px;
-			gap: 4px;
-		}
+  @media (orientation: portrait) {
+    height: 40vh;
+    // padding: 16px 8px;
+    gap: 4px;
+  }
 }
 
 .item {
@@ -24,114 +31,57 @@
 }
 
 //items position
-
 .item1 {
-	grid-area: 2/6/8/9;
+	grid-area: 8/1/15/6;
 }
-
 .item2 {
-	grid-area: 3/9/6/11;
+	grid-area: 4/6/15/13;
 }
-
 .item3 {
-	grid-area:  1/11/6/14;
+	grid-area: 7/13/15/16;
 }
-
 .item4 {
-	grid-area:  3/14/8/16;
+	grid-area: 7/16/15/19;
 }
-
 .item5 {
-	grid-area: 8/6/12/9;
+	grid-area: 1/19/15/24;
 }
-
 .item6 {
-	grid-area: 6/9/12/14;
+	grid-area: 7/24/15/27;
 }
-
 .item7 {
-	grid-area: 8/14/12/17;
+	grid-area: 7/27/15/30;
 }
-
 .item8 {
-	grid-area: 6/16/8/17;
+	grid-area: 15/4/23/11;
 }
 .item9 {
-	grid-area: 6/17/12/20;
+	grid-area: 15/11/23/14;
 }
 .item10 {
-	grid-area: 9/20/12/21;
+	grid-area: 15/14/23/17;
 }
 .item11 {
-	grid-area: 14/1/18/3;
+	grid-area: 15/17/25/25;
 }
 .item12 {
-	grid-area: 12/3/18/8;
+	grid-area: 15/25/25/29;
 }
 .item13 {
-	grid-area: 12/8/16/11;
+	grid-area: 23/5/33/9;
 }
-
 .item14 {
-	grid-area: 12/11/18/16;
+	grid-area: 23/9/30/12;
 }
-
 .item15 {
-	grid-area: 12/16/16/19;
+	grid-area: 23/12/31/17;
 }
-
 .item16 {
-	grid-area: 12/19/16/22;
+	grid-area: 25/17/33/20;
 }
-
 .item17 {
-	grid-area: 18/3/22/5;
+	grid-area: 25/20/33/26;
 }
-
 .item18 {
-	grid-area: 18/5/21/8;
-}
-
-.item19 {
-	grid-area: 16/8/21/10;
-}
-
-.item20 {
-	grid-area: 16/10/18/11;
-}
-
-.item21 {
-	grid-area: 18/10/24/13;
-}
-
-.item22 {
-	grid-area: 18/13/22/16;
-}
-
-.item23 {
-	grid-area: 16/16/21/18;
-}
-
-.item24 {
-	grid-area: 16/18/22/21;
-}
-
-.item25 {
-	grid-area: 21/5/26/7;
-}
-
-.item26 {
-	grid-area: 21/16/25/18;
-}
-
-.item27 {
-	grid-area: 22/18/24/19;
-}
-
-.item28 {
-	grid-area: 7/4/12/6;
-}
-
-.item29 {
-	grid-area: 21/7/25/10;
+	grid-area: 25/26/33/31;
 }
