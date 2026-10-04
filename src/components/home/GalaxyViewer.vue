@@ -1,5 +1,5 @@
 <template>
-  <div class="viewer">
+  <div class="viewer" @click="emit('close')">
 
     <button
       class="viewer-close"
@@ -14,7 +14,7 @@
       class="viewer-nav viewer-nav--previous"
       type="button"
       aria-label="Imagen anterior"
-      @click="$emit('previous')"
+      @click.stop="$emit('previous')"
     >
       ‹
     </button>
@@ -23,13 +23,14 @@
       class="viewer-image"
       :src="images[currentIndex].src"
       :alt="images[currentIndex].id"
+      @click.stop
     />
 
     <button
       class="viewer-nav viewer-nav--next"
       type="button"
       aria-label="Siguiente imagen"
-      @click="$emit('next')"
+      @click.stop="$emit('next')"
     >
       ›
     </button>
@@ -85,22 +86,17 @@ const handleKeydown = (event) => {
   position: fixed;
   inset: 0;
   z-index: 1000;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: rgba(0, 0, 0, 0.85);
 
   &-image {
     max-width: 85vw;
     max-height: 85vh;
-
     width: auto;
     height: auto;
-
     object-fit: contain;
-
     border-radius: 4px;
   }
 
@@ -108,16 +104,12 @@ const handleKeydown = (event) => {
     position: absolute;
     top: 24px;
     right: 32px;
-
     border: 0;
     background: transparent;
-
     color: white;
     font-size: 40px;
     line-height: 1;
-
     cursor: pointer;
-
     z-index: 2;
   }
 
@@ -125,16 +117,12 @@ const handleKeydown = (event) => {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     border: 0;
     background: transparent;
-
     color: white;
     font-size: 64px;
     line-height: 1;
-
     cursor: pointer;
-
     padding: 20px;
 
     &--previous {
@@ -151,7 +139,6 @@ const handleKeydown = (event) => {
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-
     color: white;
     font-size: 14px;
   }
