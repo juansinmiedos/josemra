@@ -2,9 +2,9 @@
   <nav class="navbar" :class="`navbar--${variant}`">
     <div class="logo">JOSEMRA</div>
     <div class="nav-links">
-      <p href="#">portfolio</p>
-      <p href="#">special projects</p>
-      <p href="#">about + contact</p>
+      <a href="#">portfolio</a>
+      <a href="#">special projects</a>
+      <a href="#">about + contact</a>
     </div>
   </nav>
 </template>
@@ -50,16 +50,16 @@ defineProps({
   pointer-events: auto;
 }
 
-.nav-links p {
+.nav-links a {
   text-align: end;
   font-weight: bold;
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s;
+  color: black;
 }
 
-.nav-links p:hover {
+.nav-links a:hover {
   opacity: 1;
-  cursor: pointer;
 }
 </style>
