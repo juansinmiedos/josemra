@@ -10,5 +10,5 @@
 
 <script setup>
 import HomeLayout from '@/layouts/HomeLayout.vue'
-import GalaxySection from '@/components/home/GalaxySection.vue'
+import GalaxySection from '@/components/home/galaxy/GalaxySection.vue'
 </script>

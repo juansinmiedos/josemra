@@ -13,7 +13,7 @@
   </div>
 
   <Teleport to="body">
-    <GalaxyViewer
+    <ImageViewer
       v-if="selectedIndex !== null"
       :images="images"
       :current-index="selectedIndex"
@@ -28,7 +28,7 @@
 import { ref } from "vue"
 import { galaxyImages } from "./galaxyImages.js"
 import GalaxyItem from "./GalaxyItem.vue"
-import GalaxyViewer from "./GalaxyViewer.vue"
+import ImageViewer from "../../ImageViewer.vue"
 
 const images = galaxyImages
 const selectedIndex = ref(null)

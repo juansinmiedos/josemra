@@ -5,7 +5,10 @@
     </div>
 
     <div class="home">
+      <div></div>
+
       <slot></slot>
+      
       <TheFooter />
     </div>
 
@@ -33,6 +36,7 @@ import TheFooter from '@/components/TheFooter.vue'
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
 }
 
